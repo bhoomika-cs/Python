@@ -1,4 +1,4 @@
-fruit = input("Enter fruit name : ")
+fruit = "banana"
 fruit_color = str(input("Enter the color of your fruit : "))
 
 if fruit_color == "green":
