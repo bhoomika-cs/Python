@@ -9,6 +9,9 @@ class Car:
 
     def full_name(self):
         return f"{self.__brand} {self.model}"
+
+    def fuel_type(self):
+        return "Petrol or Diesel"
     
 my_car = Car("Toyota", "Corolla")
 print(my_car.get_brand())
@@ -21,10 +24,23 @@ class ElectricCar(Car):
         super().__init__(brand, model)
         self.battery_size = battery_size
 
+    def fuel_type(self):
+            return "Electric Charge"
+
 my_tesla = ElectricCar("Tesla", "Model S", "85KWh")
-print(my_tesla.full_name())
-#print(my_tesla.__brand)
-print(my_tesla.get_brand())
+# print(my_tesla.full_name())
+# print(my_tesla.__brand)
+print(my_tesla.fuel_type())
+
+safari = Car("Tata", "Safari")
+print(safari.fuel_type())
+
+
+
+#Polymorphism
+
+
+
 
 
 
