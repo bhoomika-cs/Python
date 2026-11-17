@@ -12,6 +12,9 @@ class Car:
 
     def fuel_type(self):
         return "Petrol or Diesel"
+
+    def general_description(self):
+         return "Cars are means of transport"
     
 my_car = Car("Toyota", "Corolla")
 print(my_car.get_brand())
@@ -33,11 +36,8 @@ my_tesla = ElectricCar("Tesla", "Model S", "85KWh")
 print(my_tesla.fuel_type())
 
 safari = Car("Tata", "Safari")
-print(safari.fuel_type())
-
-
-
-#Polymorphism
+print(safari.fuel_type())    #Polymorphism
+print(safari.general_description())    #Polymorphism
 
 
 
